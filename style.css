@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  width: 100%;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--Very-dark-blue);
+  overflow: hidden;
+}
+.bg_star_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(./images/bg-stars.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.bg_pattern_hills_img {
+  background-image: url(./images/pattern-hills.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+}
+.social_icons {
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+}
+.social_icons img:hover {
+}
