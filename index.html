@@ -21,8 +21,14 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 11px;
+        font-size: 13px;
         text-align: center;
+        position: absolute;
+        z-index: 1;
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -37,7 +43,50 @@
         <h1>We're launching soon</h1>
       </header>
       <div class="timer">
-        
+        <!-- DAYS -->
+        <div class="days countdown">
+          <div class="flip_card">
+            <div class="top"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <span></span>
+            <div class="bottom"></div>
+          </div>
+        </div>
+
+        <!-- HOURS -->
+        <div class="hours countdown">
+          <div class="flip_card">
+            <div class="top"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <span></span>
+            <div class="bottom"></div>
+          </div>
+        </div>
+
+        <!-- MINUTES -->
+        <div class="minutes countdown">
+          <div class="flip_card">
+            <div class="top"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <span></span>
+            <div class="bottom"></div>
+          </div>
+        </div>
+
+        <!-- SECONDS -->
+        <div class="seconds countdown">
+          <div class="flip_card">
+            <div class="top"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <span></span>
+            <div class="bottom"></div>
+          </div>
+        </div>
+
       </div>
     </main>
     <div class="social_icons">
@@ -45,20 +94,14 @@
       <i class="fa-brands fa-pinterest"></i>
       <i class="fa-brands fa-instagram"></i>
     </div>
-    <!-- 
-  
-
-  Days
-  Hours
-  Minutes
-  Seconds
-   -->
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >.
+      <br />
+      Coded by <a href="https://github.com/Yashbabani0">Yash babani</a>.
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
