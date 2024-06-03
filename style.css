@@ -94,6 +94,8 @@ i:hover {
   border-radius: 8px;
   background-color: var(--Dark-desaturated-blue);
   color: var(--Soft-red);
+  position: relative;
+  overflow: hidden;
 }
 .live_time {
   font-size: 3em;
@@ -112,4 +114,31 @@ h3 {
 h3:hover {
   color: var(--Soft-red);
   transition: 0.5s;
+}
+@media (max-width: 600px) {
+  header {
+    margin-top: 1em;
+  }
+  main {
+    padding: 2em 1em;
+  }
+  .timer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2em;
+  }
+  .flip_card {
+    min-width: 5em;
+    min-height: 4em;
+    font-size: 1.5em;
+  }
+  .live_time {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  .attribution {
+    display: none;
+  }
 }
